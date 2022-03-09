@@ -49,6 +49,8 @@ You can test this tool with the Flask app in [app.py](./test_app/app.py) and the
 
 **Step 1: Analysis of time differences between valid and invalid usernames**
 
+First step is to analyze whether there is a time based leak of information on the login tries:
+
 ```
 ./TimeBasedLoginAnalysis.py -u podalirius -S
 ```
@@ -56,6 +58,8 @@ You can test this tool with the Flask app in [app.py](./test_app/app.py) and the
 ![](./.github/graph.png)
 
 **Step 2: Enumerate usernames based on response times**
+
+Now that we know that there is a time based leak of information, we can enumerate users with this command:
 
 ```
 ./TimeBasedLoginUserEnum.py -u admin -t 32 -s 100 -f ./test_app/users.txt
