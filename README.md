@@ -12,11 +12,15 @@
 
 **Requirement**: A valid username on the application (no need for password)
 
- - [x] Analysis of the response time differences between a valid and invalid username with [TimeBasedLoginAnalysis.py](./TimeBasedLoginAnalysis.py).
- - [x] Plot analysis results to a graph (option `-S` of ) or export to file (option `-f <graph.png>`) with [TimeBasedLoginAnalysis.py](./TimeBasedLoginAnalysis.py).
- - [x] Multithreaded login tries.
- - [x] Extract only usernames returning responses times that stands out.
-
+ - [TimeBasedLoginAnalysis.py](./TimeBasedLoginAnalysis.py)
+   + [x] Analysis of the response time differences between a valid and invalid username.
+   + [x] Plot analysis results to a graph (option `-S` of ) or export to file (option `-f <graph.png>`).
+   + [x] Multithreaded login tries.
+ 
+ - [TimeBasedLoginUserEnum.py](./TimeBasedLoginUserEnum.py)
+   + [x] Extract only usernames returning responses times that stands out.
+   + [x] Multithreaded login tries.
+   
 ## Usage
 
 ```

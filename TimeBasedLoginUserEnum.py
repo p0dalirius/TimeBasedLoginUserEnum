@@ -44,6 +44,8 @@ def average_response_time(username, threads=4, samples=100):
 
 
 def parseArgs():
+    print("TimeBasedLoginUserEnum v1.1 - by @podalirius_\n")
+
     parser = argparse.ArgumentParser(description="Enumerate valid usernames based on the requests response times.")
     parser.add_argument("-u", "--username", default=None, required=True, help='Username')
     parser.add_argument("-f", "--usernames-file", default=None, required=True, help='File containing list of usernames to test.')

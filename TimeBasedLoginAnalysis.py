@@ -28,6 +28,8 @@ def trylogin(username, statistics):
 
 
 def parseArgs():
+    print("TimeBasedLoginAnalysis v1.1 - by @podalirius_\n")
+
     parser = argparse.ArgumentParser(description="Enumerate valid usernames based on the requests response times.")
     parser.add_argument("-u", "--username", default=None, required=True, help='Username')
     parser.add_argument("-t", "--threads", dest="threads", action="store", type=int, default=4, required=False, help="Number of threads (default: 4)")
